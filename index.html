@@ -10,33 +10,62 @@
     html { scroll-behavior: smooth; }
     .glass { background: rgba(255,255,255,0.28); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.35); transition: transform .3s, box-shadow .3s, background .3s; }
     .glass:hover { background: rgba(255,255,255,0.38); box-shadow: 0 12px 28px rgba(16,24,40,.12); transform: translateY(-2px); }
-    .video-bg { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+    /* Hide YouTube controls space */
+    .video-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; overflow: hidden; }
     .video-bg iframe { width: 100vw; height: 56.25vw; min-height: 100%; min-width: 177.77vh; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
     .accordion-content { display: none; }
     .accordion-item.active .accordion-content { display: block; }
+    
   </style>
 </head>
 <body class="bg-white text-slate-800">
   <!-- Header -->
-  <header class="fixed top-0 inset-x-0 z-50">
-    <div class="mx-auto max-w-6xl px-4">
-      <nav class="glass rounded-2xl mt-4 px-4 py-3 flex items-center justify-between">
+<!-- Header -->
+<header class="fixed top-0 inset-x-0 z-50">
+    <div class="mx-auto max-w-6xl px-3 sm:px-4">
+      <nav class="glass rounded-2xl mt-4 px-4 py-3 flex items-center justify-between relative">
         <a href="#home" class="font-semibold tracking-wide text-slate-900">ICTROPS UNMUL 2025</a>
+        <!-- Desktop menu -->
         <ul class="hidden md:flex items-center gap-6 text-sm">
-          <li><a href="#about" class="hover:underline">About</a></li>
           <li><a href="#topics" class="hover:underline">Topics</a></li>
           <li><a href="#speakers" class="hover:underline">Speakers</a></li>
           <li><a href="#dates" class="hover:underline">Important Dates</a></li>
           <li><a href="#submission" class="hover:underline">Submission</a></li>
-          <li><a href="#committee" class="hover:underline">Committee</a></li>
-          <li><a href="#partners" class="hover:underline">Publishing Partner</a></li>
-          <li><a href="#venue" class="hover:underline">Venue</a></li>
+          <li><a href="#template" class="hover:underline">Template</a></li>
           <li><a href="#previous" class="hover:underline">Previous</a></li>
         </ul>
-        <a href="#submission" class="hidden md:inline-block bg-green-600 text-white rounded-xl px-4 py-2 hover:bg-green-700">Submit</a>
+        <div class="flex items-center gap-3">
+          <a href="#registration" class="hidden md:inline-block bg-green-600 text-white rounded-xl px-4 py-2 hover:bg-green-700">Register</a>
+          <!-- Mobile toggle -->
+          <button id="menuToggle" class="md:hidden inline-flex items-center justify-center rounded-xl p-2 border border-slate-300" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenuOverlay">
+            <svg id="menuIconBars" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            <svg id="menuIconX" class="h-5 w-5 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
       </nav>
     </div>
+    <!-- Mobile full-screen overlay menu for < 768px, darker backdrop -->
+    <div id="mobileMenuOverlay" class="md:hidden hidden fixed inset-0 z-[70] bg-slate-900/90 backdrop-blur-sm">
+      <!-- Close button inside overlay so it never hides -->
+      <button id="mobileMenuClose" class="absolute top-4 right-4 inline-flex items-center justify-center w-10 h-10 rounded-xl border border-white/30 text-white/90 focus:outline-none" aria-label="Close menu">
+        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="mx-auto max-w-6xl px-3 sm:px-4 pt-[calc(env(safe-area-inset-top)+96px)] pb-[env(safe-area-inset-bottom)]">
+        <div class="glass rounded-2xl p-3">
+          <ul class="flex flex-col divide-y divide-white/10 text-white/90 text-base">
+            <li><a class="block py-3" href="#topics">Topics</a></li>
+            <li><a class="block py-3" href="#speakers">Speakers</a></li>
+            <li><a class="block py-3" href="#dates">Important Dates</a></li>
+            <li><a class="block py-3" href="#submission">Submission</a></li>
+            <li><a class="block py-3" href="#template">Template</a></li>
+            <li><a class="block py-3" href="#previous">Previous</a></li>
+          </ul>
+          <a href="#registration" class="mt-4 block w-full text-center px-4 py-3 rounded-xl bg-green-600 text-white hover:bg-green-700">Register</a>
+        </div>
+      </div>
+    </div>
   </header>
+
 
   <!-- Hero -->
   <section id="home" class="relative min-h-screen flex items-center">
@@ -673,6 +702,28 @@
 </footer>
 
   <script>
+    // Mobile menu toggle with dark overlay, scroll lock, and icon swap
+    (function(){
+      const toggle = document.getElementById('menuToggle');
+      const overlay = document.getElementById('mobileMenuOverlay');
+      const closeBtn = document.getElementById('mobileMenuClose');
+      const iconBars = document.getElementById('menuIconBars');
+      const iconX = document.getElementById('menuIconX');
+      const body = document.body;
+      function lockScroll(){ body.style.overflow = 'hidden'; }
+      function unlockScroll(){ body.style.overflow = ''; }
+      function closeMenu(){ if(overlay){ overlay.classList.add('hidden'); overlay.setAttribute('aria-hidden','true'); } if(toggle){ toggle.setAttribute('aria-expanded','false'); } if(iconBars && iconX){ iconBars.classList.remove('hidden'); iconX.classList.add('hidden'); } unlockScroll(); }
+      function openMenu(){ if(overlay){ overlay.classList.remove('hidden'); overlay.setAttribute('aria-hidden','false'); } if(toggle){ toggle.setAttribute('aria-expanded','true'); } if(iconBars && iconX){ iconBars.classList.add('hidden'); iconX.classList.remove('hidden'); } lockScroll(); }
+      toggle && toggle.addEventListener('click', () => { const expanded = toggle.getAttribute('aria-expanded') === 'true'; expanded ? closeMenu() : openMenu(); });
+      closeBtn && closeBtn.addEventListener('click', closeMenu);
+      // Close on link click inside overlay
+      overlay && overlay.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+      // Close on Escape
+      document.addEventListener('keydown', e => { if(e.key === 'Escape') closeMenu(); });
+      // Resize handler: reset when moving to desktop
+      window.addEventListener('resize', () => { if(window.innerWidth >= 768) closeMenu(); });
+    })();
+
     // Countdown
     function startCountdown() {
       const el = document.getElementById('countdown');
