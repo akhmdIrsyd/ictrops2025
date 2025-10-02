@@ -6,17 +6,31 @@
   <title>ICTROPS UNMUL 2025</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <meta name="description" content="ICTROPS UNMUL 2025 Conference Landing Page" />
-  <style>
-    html { scroll-behavior: smooth; }
-    .glass { background: rgba(255,255,255,0.28); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.35); transition: transform .3s, box-shadow .3s, background .3s; }
-    .glass:hover { background: rgba(255,255,255,0.38); box-shadow: 0 12px 28px rgba(16,24,40,.12); transform: translateY(-2px); }
-    /* Hide YouTube controls space */
-    .video-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; overflow: hidden; }
-    .video-bg iframe { width: 100vw; height: 56.25vw; min-height: 100%; min-width: 177.77vh; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
-    .accordion-content { display: none; }
-    .accordion-item.active .accordion-content { display: block; }
-    
-  </style>
+<style>
+  html { scroll-behavior: smooth; }
+  body { overflow-x: hidden; } /* cegah scroll ke kanan di mobile */
+
+  .glass { background: rgba(255,255,255,0.28); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.35); transition: transform .3s, box-shadow .3s, background .3s; }
+  .glass:hover { background: rgba(255,255,255,0.38); box-shadow: 0 12px 28px rgba(16,24,40,.12); transform: translateY(-2px); }
+
+  .video-bg { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+  /* Perbaikan utama: isi container penuh, tanpa 100vw */
+  .video-bg iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    object-fit: cover;
+    transform: none;
+  }
+
+  .accordion-content { display: none; }
+  .accordion-item.active .accordion-content { display: block; }
+  #navMenu { width: 100%; }
+</style>
+
 </head>
 <body class="bg-white text-slate-800">
   <!-- Header -->
@@ -607,9 +621,17 @@
         <p class="text-slate-700">Accommodation and local transport information will be provided to registered participants.</p>
       </div>
       <div class="glass rounded-3xl p-2">
-        <div class="aspect-video w-full">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.685123560083!2d117.156353376903!3d-0.4681759995272272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df67f4cd30823c3%3A0x22ec6237d9bbdba1!2sFaculty%20of%20Engineering%2C%20Mulawarman%20University!5e0!3m2!1sen!2sid!4v1759400643913!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        <!-- Ganti iframe map di section Venue -->
+<div class="aspect-video w-full">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.685123560083!2d117.156353376903!3d-0.4681759995272272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df67f4cd30823c3%3A0x22ec6237d9bbdba1!2sFaculty%20of%20Engineering%2C%20Mulawarman%20University!5e0!3m2!1sen!2sid!4v1759400643913!5m2!1sen!2sid"
+    style="border:0; width:100%; height:100%;"
+    allowfullscreen
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
       </div>
     </div>
   </section>
