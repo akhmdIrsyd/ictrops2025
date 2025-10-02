@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ICTROPS UNMUL 2025</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="ICTROPS UNMUL 2025 Conference Landing Page" />
+  <style>
+    html { scroll-behavior: smooth; }
+    .glass { background: rgba(255,255,255,0.28); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.35); transition: transform .3s, box-shadow .3s, background .3s; }
+    .glass:hover { background: rgba(255,255,255,0.38); box-shadow: 0 12px 28px rgba(16,24,40,.12); transform: translateY(-2px); }
+    .video-bg { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+    .video-bg iframe { width: 100vw; height: 56.25vw; min-height: 100%; min-width: 177.77vh; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+    .accordion-content { display: none; }
+    .accordion-item.active .accordion-content { display: block; }
+  </style>
+</head>
+<body class="bg-white text-slate-800">
+  <!-- Header -->
+  <header class="fixed top-0 inset-x-0 z-50">
+    <div class="mx-auto max-w-6xl px-4">
+      <nav class="glass rounded-2xl mt-4 px-4 py-3 flex items-center justify-between">
+        <a href="#home" class="font-semibold tracking-wide text-slate-900">ICTROPS UNMUL 2025</a>
+        <ul class="hidden md:flex items-center gap-6 text-sm">
+          <li><a href="#about" class="hover:underline">About</a></li>
+          <li><a href="#topics" class="hover:underline">Topics</a></li>
+          <li><a href="#speakers" class="hover:underline">Speakers</a></li>
+          <li><a href="#dates" class="hover:underline">Important Dates</a></li>
+          <li><a href="#submission" class="hover:underline">Submission</a></li>
+          <li><a href="#committee" class="hover:underline">Committee</a></li>
+          <li><a href="#partners" class="hover:underline">Publishing Partner</a></li>
+          <li><a href="#venue" class="hover:underline">Venue</a></li>
+          <li><a href="#previous" class="hover:underline">Previous</a></li>
+        </ul>
+        <a href="#submission" class="hidden md:inline-block bg-green-600 text-white rounded-xl px-4 py-2 hover:bg-green-700">Submit</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative min-h-screen flex items-center">
+    <div class="video-bg" aria-hidden="true">
+      <iframe src="https://www.youtube.com/embed/S_9XNYv6RZo?autoplay=1&mute=1&controls=0&loop=1&playlist=S_9XNYv6RZo&modestbranding=1&rel=0" title="Hero background video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="absolute inset-0 bg-white/70"></div>
+    <div class="relative z-10 w-full">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="glass rounded-3xl shadow-2xl p-8 md:p-12">
+          <h1 class="text-3xl md:text-5xl font-bold text-slate-900">International Conference on Technology, Research, and Open Problem Solving</h1>
+          <h2 class="text-xl mt-4 text-slate-700">Resilient Tropical Futures: Digital Transformation, Green Infrastructure, and Climate Adaptation</h2>
+          <p class="mt-4 text-slate-700">Faculty of Engineering, Mulawarman University, Samarinda, Indonesia</p>
+          <p class="mt-1 text-slate-700">Hybrid conference</p>
+          <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4" id="countdown" data-deadline="2025-12-03T09:00:00+08:00">
+            <div class="glass rounded-2xl p-4 text-center">
+              <div class="text-3xl md:text-4xl font-bold" id="dd">00</div>
+              <div class="text-xs uppercase tracking-wide">Days</div>
+            </div>
+            <div class="glass rounded-2xl p-4 text-center">
+              <div class="text-3xl md:text-4xl font-bold" id="hh">00</div>
+              <div class="text-xs uppercase tracking-wide">Hours</div>
+            </div>
+            <div class="glass rounded-2xl p-4 text-center">
+              <div class="text-3xl md:text-4xl font-bold" id="mm">00</div>
+              <div class="text-xs uppercase tracking-wide">Minutes</div>
+            </div>
+            <div class="glass rounded-2xl p-4 text-center">
+              <div class="text-3xl md:text-4xl font-bold" id="ss">00</div>
+              <div class="text-xs uppercase tracking-wide">Seconds</div>
+            </div>
+          </div>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#submission" class="bg-green-600 text-white px-5 py-3 rounded-xl hover:bg-green-700">Submit Your Paper</a>
+            <a href="#registration" class="px-5 py-3 rounded-xl border border-slate-300 hover:bg-white">Registration</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16">
+    <div class="mx-auto max-w-6xl px-4 grid md:grid-cols-3 gap-8 items-stretch">
+      <div class="md:col-span-2 glass rounded-3xl p-8">
+        <h2 class="text-2xl font-bold text-slate-900">About</h2>
+        <p class="mt-4 text-slate-700">ICTROPS UNMUL 2025 brings together researchers, practitioners, and industry partners to present advances in information and engineering technologies with practical impacts for Borneo and beyond. The program features peer reviewed papers, invited talks, and panels focused on applied innovation.</p>
+      </div>
+      <div class="glass rounded-3xl p-8">
+        <h3 class="text-lg font-semibold">At a glance</h3>
+        <ul class="mt-4 space-y-2 text-slate-700">
+          <li>When: 15–16 November 2025</li>
+          <li>Where: Samarinda, Indonesia</li>
+          <li>Mode: Hybrid</li>
+          <li>Language: English</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Topics -->
+  <section id="topics" class="py-16 bg-green-50">
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="glass rounded-3xl p-8">
+        <h2 class="text-2xl font-bold text-slate-900">Topics</h2>
+        <div class="mt-6 grid md:grid-cols-3 gap-6 text-slate-700">
+          <ul class="space-y-2 list-disc ml-5">
+            <li>Artificial Intelligence and Data Mining</li>
+            <li>Computer Vision and Biomedical Computing</li>
+            <li>Natural Language Processing</li>
+            <li>IoT and Sensor Networks</li>
+            <li>Cloud, Edge, and Distributed Systems</li>
+          </ul>
+          <ul class="space-y-2 list-disc ml-5">
+            <li>Cybersecurity and Blockchain</li>
+            <li>Software Engineering and DevOps</li>
+            <li>Smart City and Smart Village</li>
+            <li>Geospatial and Remote Sensing</li>
+            <li>Human Computer Interaction</li>
+          </ul>
+          <ul class="space-y-2 list-disc ml-5">
+            <li>AgriTech and Forestry Informatics</li>
+            <li>Industrial Systems and Robotics</li>
+            <li>Energy, Environment, and Sustainability</li>
+            <li>Digital Governance and e-Government</li>
+            <li>Open Problems and Negative Results</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Speakers -->
+  <section id="speakers" class="py-16">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="text-2xl font-bold text-slate-900">Speakers</h2>
+      <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Example speaker card with photo + hover -->
+        <div class="glass rounded-3xl p-6 flex flex-col items-center text-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-2xl hover:ring-2 hover:ring-green-500/50">
+          <div class="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden shadow-inner">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600" alt="Keynote Speaker" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110 grayscale hover:grayscale-0" />
+          </div>
+          <h3 class="mt-4 font-semibold">Dr.Eng. Ir. Dutho Suh Utomo, S.T., M.T.</h3>
+          <p class="text-sm text-slate-600">Faculty of Engineering, Mulawarman University</p>
+        </div>
+
+        <div class="glass rounded-3xl p-6 flex flex-col items-center text-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-2xl hover:ring-2 hover:ring-green-500/50">
+          <div class="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden shadow-inner">
+            <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=600" alt="Keynote Speaker" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110 grayscale hover:grayscale-0" />
+          </div>
+          <h3 class="mt-4 font-semibold">Assoc. Prof. Ts. Dr. Wan Zakiah Wan Ismail</h3>
+          <p class="text-sm text-slate-600">Advanced Devices and Systems (ADS), Coordinator, Faculty - Electrical & Electronic Engineering, USIM Malaysia</p>
+        </div>
+
+        <div class="glass rounded-3xl p-6 flex flex-col items-center text-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-2xl hover:ring-2 hover:ring-green-500/50">
+          <div class="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden shadow-inner">
+            <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?q=80&w=600" alt="Invited Speaker" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110 grayscale hover:grayscale-0" />
+          </div>
+          <h3 class="mt-4 font-semibold">Assoc.Prof.Dr.Naraphorn Paoprasert</h3>
+          <p class="text-sm text-slate-600">Affiliation</p>
+        </div>
+
+        <div class="glass rounded-3xl p-6 flex flex-col items-center text-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-2xl hover:ring-2 hover:ring-green-500/50">
+          <div class="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden shadow-inner">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=600" alt="Invited Speaker" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110 grayscale hover:grayscale-0" />
+          </div>
+          <h3 class="mt-4 font-semibold">Asst.Prof.Dr.Ramidayu Yousuk ,D.Eng.</h3>
+          <p class="text-sm text-slate-600">Affiliation</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Important Dates -->
+  <section id="dates" class="py-16 bg-green-50">
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="glass rounded-3xl p-8">
+        <h2 class="text-2xl font-bold text-slate-900">Important Dates</h2>
+        <div class="mt-6 grid md:grid-cols-2 gap-6">
+          <ul class="space-y-3 text-slate-700">
+            <li>Submission opens: 06 October 2025</li>
+            <li>Submission deadline: 03 November 2025</li>
+            <li>Notification: 12 November 2025</li>
+            <li>Camera ready: 21 November 2025</li>
+          </ul>
+          <ul class="space-y-3 text-slate-700">
+            <li>Early registration: 16 November 2025</li>
+            <li>Regular registration: 21 November 2025</li>
+            <li>Conference dates: 03 December 2025</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Submission Guidelines -->
+<section id="submission" class="py-16">
+  <div class="mx-auto max-w-6xl px-4">
+    <div class="glass rounded-3xl p-8">
+      <h2 class="text-2xl font-bold text-slate-900">Submission Guidelines</h2>
+      <ul class="mt-4 space-y-2 text-slate-700 list-disc ml-5">
+        <li>Papers must be original and not under review elsewhere.</li>
+        <li>Length 6–10 pages, including references, single column format.</li>
+        <li>Use the official template. Ensure anonymity if double blind review.</li>
+        <li>Submit as PDF via the Submission Page.</li>
+        <li>At least one author must register and present.</li>
+      </ul>
+      <!--<div class="mt-6">
+        <a href="#" class="inline-block px-5 py-3 rounded-xl bg-green-600 text-white hover:bg-green-700 transition">
+          Author Checklist
+        </a>
+      </div>-->
+    </div>
+  </div>
+</section>
+
+<!-- Paper Template -->
+<section id="template" class="py-16 bg-green-50">
+  <div class="mx-auto max-w-6xl px-4">
+    <div class="glass rounded-3xl p-8">
+      <h2 class="text-2xl font-bold text-slate-900">Paper Template</h2>
+      <p class="mt-4 text-slate-700">
+        Download the official conference template. Both Microsoft Word and LaTeX versions are provided to ensure compliance with formatting requirements.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-4">
+        <a href="#" class="px-5 py-3 rounded-xl bg-green-600 text-white hover:bg-green-700 transition">Template Word</a>
+        <a href="#" class="px-5 py-3 rounded-xl border border-slate-300 hover:bg-white transition">Template LaTeX</a>
+      </div>
+      <p class="mt-4 text-sm text-slate-600">
+        Format your manuscript according to the template before submission to avoid delays in review.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Registration Fee & Payment Methods -->
+<section id="registration" class="py-16">
+  <div class="mx-auto max-w-6xl px-4">
+    <div class="glass rounded-3xl p-8">
+      <h2 class="text-2xl font-bold text-slate-900">Registration Fee & Payment Methods</h2>
+      <div class="mt-6 overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead class="text-left">
+            <tr>
+              <th class="py-2">Category</th>
+              <th class="py-2">Early</th>
+              <th class="py-2">Regular</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-700">
+            <tr class="border-t border-slate-200">
+              <td class="py-2">Local Student</td>
+              <td class="py-2">IDR 1,000,000</td>
+              <td class="py-2">IDR 1,250,000</td>
+            </tr>
+            <tr class="border-t border-slate-200">
+              <td class="py-2">Local Professional</td>
+              <td class="py-2">IDR 1,750,000</td>
+              <td class="py-2">IDR 2,000,000</td>
+            </tr>
+            <tr class="border-t border-slate-200">
+              <td class="py-2">International</td>
+              <td class="py-2">USD 150</td>
+              <td class="py-2">USD 180</td>
+            </tr>
+            <tr class="border-t border-slate-200">
+              <td class="py-2">Listener</td>
+              <td class="py-2">IDR 500,000</td>
+              <td class="py-2">IDR 600,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="mt-6">
+        <h3 class="text-lg font-semibold text-slate-900">Payment Methods</h3>
+        <ul class="mt-3 list-disc ml-5 text-slate-700 space-y-1">
+          <li>Bank transfer: Account name Panitia ICTROPS, Bank BNI, Account 123456789</li>
+          <li>International transfer: SWIFT Code BNINIDJA</li>
+          <li>E-invoice available for institutions</li>
+        </ul>
+      </div>
+      <div class="mt-6">
+        <a href="#" class="inline-block px-5 py-3 rounded-xl bg-green-600 text-white hover:bg-green-700 transition">
+          Pay and Register
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Submission Page CTA -->
+<section id="submission-page" class="py-16 bg-green-50">
+  <div class="mx-auto max-w-6xl px-4">
+    <div class="glass rounded-3xl p-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <div>
+        <h2 class="text-2xl font-bold text-slate-900">Submission Page</h2>
+        <p class="text-slate-700 mt-2">Submit your manuscript through our official submission system.</p>
+      </div>
+      <a href="#" class="px-6 py-3 rounded-xl bg-green-600 text-white hover:bg-green-700 transition">Go to Submission</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Committee -->
+  <!-- Scientific Committee -->
+<section id="committee" class="py-16 bg-">
+  <div class="mx-auto max-w-6xl px-4">
+    <h2 class="text-2xl font-bold text-slate-900">Scientific Committee</h2>
+
+    <div class="mt-6 space-y-4">
+      <!-- Chairman -->
+      <div class="accordion-item glass rounded-2xl">
+        <button class="w-full flex items-center justify-between p-5" aria-expanded="false">
+          <span class="font-semibold">Chairman</span>
+          <svg class="h-5 w-5 transition-transform" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"/>
+          </svg>
+        </button>
+        <div class="accordion-content px-5 pb-5">
+          <ul class="list-disc ml-5 text-slate-700 space-y-1">
+            <li>Ir. Febrina Zulya, S.T., M.T.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Co-Chairs -->
+      <div class="accordion-item glass rounded-2xl">
+        <button class="w-full flex items-center justify-between p-5" aria-expanded="false">
+          <span class="font-semibold">Co-Chairs</span>
+          <svg class="h-5 w-5 transition-transform" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"/>
+          </svg>
+        </button>
+        <div class="accordion-content px-5 pb-5">
+          <ul class="list-disc ml-5 text-slate-700 space-y-1">
+            <li>Ir. Adi Pandu W., S.T., M.T., IPM</li>
+            <li>Ir. Nur Asriatul Kholifah, S.Ars., M.Sc.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Treasurer -->
+      <div class="accordion-item glass rounded-2xl">
+        <button class="w-full flex items-center justify-between p-5" aria-expanded="false">
+          <span class="font-semibold">Treasurer</span>
+          <svg class="h-5 w-5 transition-transform" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"/>
+          </svg>
+        </button>
+        <div class="accordion-content px-5 pb-5">
+          <ul class="list-disc ml-5 text-slate-700">
+            <li>Hj. Dini Mariani, S.E., M.Si.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Event Organizing Committee -->
+      <div class="accordion-item glass rounded-2xl">
+        <button class="w-full flex items-center justify-between p-5">
+          <span class="font-semibold">Event Organizing Committee</span>
+          <svg class="h-5 w-5 transition-transform" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"/>
+          </svg>
+        </button>
+        <div class="accordion-content px-5 pb-5 text-slate-700">
+          
+          <ul class="list-disc ml-5 space-y-1">
+            <li>Ir. Resty Intan Putri, S.T., M.Eng.</li>
+            <li>Rahmahtriananda Faradilla, S.T., M.T.</li>
+            <li>Kartika Tristanto, S.Ars., M.Ars.</li>
+            <li>Ir. Mochamad Gaharu Dida Devedo, S.T., M.Eng.</li>
+            <li>Ir. Anisah Azizah, S.T., M.T.</li>
+            <li>Khairunnisa, S.T., M.T.</li>
+            <li>Ridzky Zul Asdi, S.T., M.T.</li>
+            <li>Ir. Ardhan Ismail, S.T., M.T.</li>
+            <li>Ir. Puspa Indah Rindawati, S.T., M.Ling.</li>
+            <li>Rety Winonazada, M.T.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Secretariat and Registration -->
+      <div class="accordion-item glass rounded-2xl">
+        <button class="w-full flex items-center justify-between p-5">
+          <span class="font-semibold">Secretariat and Registration</span>
+          <svg class="h-5 w-5 transition-transform" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"/></svg>
+        </button>
+        <div class="accordion-content px-5 pb-5 text-slate-700">
+          
+          <ul class="list-disc ml-5 space-y-1">
+            <li>Ir. Putri Nopianti, S.T., M.T.</li>
+            <li>Nabila Nur Agusti, S.Si.</li>
+            <li>Dian Febrianti Pisceselia, S.Tr.T., M.T.</li>
+            <li>Azmia Rizka Nafisah, S.T. M.T.</li>
+            <li>Albert Pontus Juvensius, S.T., M.T.</li>
+            <li>Ir. Ahmad Moh. Nur, S.T., M.T.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Conference keynote and parallel sessions -->
+      <div class="accordion-item glass rounded-2xl">
+        <button class="w-full flex items-center justify-between p-5">
+          <span class="font-semibold">Conference Keynote and Parallel Sessions</span>
+          <svg class="h-5 w-5 transition-transform" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"/></svg>
+        </button>
+        <div class="accordion-content px-5 pb-5 text-slate-700">
+          
+          <ul class="list-disc ml-5 space-y-1">
+            <li>Ir. Fahrizal Adnan, S.T., M.Sc.</li>
+            <li>Ir. Tantra Diwa Larasati, S.T., M.T.</li>
+            <li>Dr. Eng. Ir. Dutho Suh Utomo, S.T., M.T.</li>
+            <li>Aulia Fauziah Lu'ayi, S.T., M.T.</li>
+            <li>Dr. Retno Wulandari, M.Sc.</li>
+            <li>Dr.Eng. Panggea Ghiyats Sabrian, S.Si., M.T.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Articles and Proceedings -->
+      <div class="accordion-item glass rounded-2xl">
+        <button class="w-full flex items-center justify-between p-5">
+          <span class="font-semibold">Articles and Proceedings</span>
+          <svg class="h-5 w-5 transition-transform" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"/></svg>
+        </button>
+        <div class="accordion-content px-5 pb-5 text-slate-700">
+          
+          <ul class="list-disc ml-5 space-y-1">
+            <li>Prof. Haviluddin, S.Kom., M.Kom., Ph.D., IPU., ASEAN Eng.</li>
+            <li>Ratri Bodromulatsih, S.Ds., M.Ars.</li>
+            <li>Muhammad Rizqy Septyandy, M.T.</li>
+            <li>Ir. Searphin Nugroho, S.T., M.T.</li>
+            <li>Ir. M. Ibadurrahman Arrasyid, S.Kom., M.Kom.</li>
+            <li>Chalsi Mala Sari, S.T., M.T.</li>
+            <li>Ir. Pandu K. Utomo, S.T., M.Sc., IPM.</li>
+            <li>Riftika Rizawanti, S.Pd., MCS.</li>
+            <li>Eko Heryadi, S.Hut., MP., M.Sc.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Web, Documentation and Publication -->
+      <div class="accordion-item glass rounded-2xl">
+        <button class="w-full flex items-center justify-between p-5">
+          <span class="font-semibold">Web, Documentation and Publication</span>
+          <svg class="h-5 w-5 transition-transform" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"/></svg>
+        </button>
+        <div class="accordion-content px-5 pb-5 text-slate-700">
+          
+          <ul class="list-disc ml-5 space-y-1">
+            <li>Akhmad Irsyad, S.T., M.Kom</li>
+            <li>Mas Dhani</li>
+            <li>Muhammad Zulfariansyah, S.Kom., M.TI</li>
+            <li>Imam Muhammad Hakim, S.T., M.T.</li>
+            <li>Gubtha Mahendra Putra, S.Kom., M.Eng.</li>
+            <li>Muhammad Fawaz Saputra, S.T., M.Eng.</li>
+            <li>Rajiansyah, S.Kom., M.Sc.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Sponsorships -->
+      <div class="accordion-item glass rounded-2xl">
+        <button class="w-full flex items-center justify-between p-5">
+          <span class="font-semibold">Sponsorships</span>
+          <svg class="h-5 w-5 transition-transform" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"/></svg>
+        </button>
+        <div class="accordion-content px-5 pb-5 text-slate-700">
+          
+          <ul class="list-disc ml-5 space-y-1">
+            <li>Ir. Indra Ariani, S.T., M.Eng.</li>
+            <li>Lidwina Putri Astani, S.T., M.Eng.</li>
+            <li>Fredy Heri Yanto Siadari, S.T., M.T.</li>
+            <li>Ian Karunia Perkasa, S.T., M.T.</li>
+            <li>Rif'an Fathoni, S.T., M.T.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Accommodation and Consumption -->
+      <div class="accordion-item glass rounded-2xl">
+        <button class="w-full flex items-center justify-between p-5">
+          <span class="font-semibold">Accommodation and Consumption</span>
+          <svg class="h-5 w-5 transition-transform" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"/></svg>
+        </button>
+        <div class="accordion-content px-5 pb-5 text-slate-700">
+          
+          <ul class="list-disc ml-5 space-y-1">
+            <li>Aminuddin, S.Sos</li>
+            <li>Abdul Rajab Dei, S.E., M.M.</li>
+            <li>Maulidin Rahman, S.Kom.</li>
+            <li>Yuni Marliayana, S.Hut.</li>
+            <li>Jumiati, S.P.</li>
+            <li>Ari Istiyarti, S.Psi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Reviewers -->
+      <div class="accordion-item glass rounded-2xl">
+        <button class="w-full flex items-center justify-between p-5">
+          <span class="font-semibold">Reviewers</span>
+          <svg class="h-5 w-5 transition-transform" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"/>
+          </svg>
+        </button>
+        <div class="accordion-content px-5 pb-5 text-slate-700">
+          
+          <ul class="list-disc ml-5 space-y-1">
+            <li>Ir. Resty Intan Putri, S.T., M.Eng.</li>
+            <li>Rahmahtriananda Faradilla, S.T., M.T.</li>
+            <li>Kartika Tristanto, S.Ars., M.Ars.</li>
+            <li>Ir. Mochamad Gaharu Dida Devedo, S.T., M.Eng.</li>
+            <li>Ir. Anisah Azizah, S.T., M.T.</li>
+            <li>Khairunnisa, S.T., M.T.</li>
+            <li>Ridzky Zul Asdi, S.T., M.T.</li>
+            <li>Ir. Ardhan Ismail, S.T., M.T.</li>
+            <li>Ir. Puspa Indah Rindawati, S.T., M.Ling.</li>
+            <li>Rety Winonazada, M.T.</li>
+          </ul>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Publishing Partner -->
+  <section id="partners" class="py-16 bg-green-50">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="text-2xl font-bold text-slate-900">Publishing Partner</h2>
+      <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="glass rounded-2xl p-6 text-center">
+          <div class="h-16 bg-slate-100 rounded-xl"></div>
+          <p class="mt-3 text-sm text-slate-700">Partner A</p>
+        </div>
+        <div class="glass rounded-2xl p-6 text-center">
+          <div class="h-16 bg-slate-100 rounded-xl"></div>
+          <p class="mt-3 text-sm text-slate-700">Partner B</p>
+        </div>
+        <div class="glass rounded-2xl p-6 text-center">
+          <div class="h-16 bg-slate-100 rounded-xl"></div>
+          <p class="mt-3 text-sm text-slate-700">Partner C</p>
+        </div>
+        <div class="glass rounded-2xl p-6 text-center">
+          <div class="h-16 bg-slate-100 rounded-xl"></div>
+          <p class="mt-3 text-sm text-slate-700">Partner D</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Venue -->
+  <section id="venue" class="py-16 ">
+    <div class="mx-auto max-w-6xl px-4 grid lg:grid-cols-2 gap-8 items-stretch">
+      <div class="glass rounded-3xl p-8">
+        <h2 class="text-2xl font-bold text-slate-900">Venue</h2>
+        <p class="mt-4 text-slate-700">Faculty of Engineering, Mulawarman University, Samarinda.</p>
+        <p class="text-slate-700">Accommodation and local transport information will be provided to registered participants.</p>
+      </div>
+      <div class="glass rounded-3xl p-2">
+        <div class="aspect-video w-full">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.685123560083!2d117.156353376903!3d-0.4681759995272272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df67f4cd30823c3%3A0x22ec6237d9bbdba1!2sFaculty%20of%20Engineering%2C%20Mulawarman%20University!5e0!3m2!1sen!2sid!4v1759400643913!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Previous Conferences -->
+  <section id="previous" class="py-16 bg-green-50">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="text-2xl font-bold text-slate-900">Previous Conferences</h2>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <a class="block glass rounded-2xl p-6 hover:shadow-xl" href="#">
+          <h3 class="font-semibold">ICTROPS 2024</h3>
+          <p class="text-sm text-slate-600 mt-1">Proceedings and photo gallery</p>
+        </a>
+        <a class="block glass rounded-2xl p-6 hover:shadow-xl" href="#">
+          <h3 class="font-semibold">ICTROPS 2023</h3>
+          <p class="text-sm text-slate-600 mt-1">Program book and highlights</p>
+        </a>
+        <a class="block glass rounded-2xl p-6 hover:shadow-xl" href="#">
+          <h3 class="font-semibold">ICTROPS 2022</h3>
+          <p class="text-sm text-slate-600 mt-1">Archive</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Footer -->
+<footer class="bg-slate-100 text-white border-t border-slate-200">
+  <div class="mx-auto max-w-6xl px-4 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <!-- Brand -->
+    <div>
+      <h4 class="text-lg font-semibold text-slate-900">ICTROPS UNMUL 2025</h4>
+      <p class="mt-3 text-sm text-slate-600">
+        International Conference on Technology, Research, and Open Problem Solving.
+      </p>
+      <p class="mt-3 text-sm text-slate-600">
+        Faculty of Engineering, Mulawarman University, Samarinda, Indonesia.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h5 class="text-sm font-semibold text-slate-900 tracking-wide">Quick Links</h5>
+      <ul class="mt-3 space-y-2 text-sm">
+        <li><a class="text-slate-600 hover:text-green-700" href="#about">About</a></li>
+        <li><a class="text-slate-600 hover:text-green-700" href="#topics">Topics</a></li>
+        <li><a class="text-slate-600 hover:text-green-700" href="#speakers">Speakers</a></li>
+        <li><a class="text-slate-600 hover:text-green-700" href="#dates">Important Dates</a></li>
+      </ul>
+    </div>
+
+    <!-- Submissions -->
+    <div>
+      <h5 class="text-sm font-semibold text-slate-900 tracking-wide">Submissions</h5>
+      <ul class="mt-3 space-y-2 text-sm">
+        <li><a class="text-slate-600 hover:text-green-700" href="#submission">Guidelines</a></li>
+        <li><a class="text-slate-600 hover:text-green-700" href="#submission">Templates</a></li>
+        <li><a class="text-slate-600 hover:text-green-700" href="#registration">Registration & Payment</a></li>
+        <li><a class="text-slate-600 hover:text-green-700" href="#committee">Committee</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h5 class="text-sm font-semibold text-slate-900 tracking-wide">Contact</h5>
+      <ul class="mt-3 space-y-2 text-sm text-slate-600">
+        <li>Email: ictrops@ft.unmul.ac.id</li>
+        <li>Office: FT UNMUL, Samarinda</li>
+        <li>Time zone: GMT+8</li>
+      </ul>
+      <div class="mt-4">
+        <a href="#registration" class="inline-block px-4 py-2 rounded-xl bg-green-600 text-white hover:bg-green-700">
+          Register
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="border-t border-slate-200">
+    <div class="mx-auto max-w-6xl px-4 py-4 flex flex-col md:flex-row items-center justify-between gap-3">
+      <p class="text-xs text-slate-500">
+        © 2025 ICTROPS UNMUL. All rights reserved.
+      </p>
+      <div class="flex items-center gap-4 text-xs">
+        <a href="#previous" class="text-slate-500 hover:text-green-700">Previous Conferences</a>
+        <a href="#partners" class="text-slate-500 hover:text-green-700">Publishing Partner</a>
+        <a href="#venue" class="text-slate-500 hover:text-green-700">Venue</a>
+        <a href="#home" class="text-slate-500 hover:text-green-700">Back to top</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script>
+    // Countdown
+    function startCountdown() {
+      const el = document.getElementById('countdown');
+      const deadline = new Date(el.getAttribute('data-deadline')).getTime();
+      function tick() {
+        const now = Date.now();
+        const t = Math.max(deadline - now, 0);
+        const d = Math.floor(t / 86400000);
+        const h = Math.floor((t % 86400000) / 3600000);
+        const m = Math.floor((t % 3600000) / 60000);
+        const s = Math.floor((t % 60000) / 1000);
+        document.getElementById('dd').textContent = String(d).padStart(2,'0');
+        document.getElementById('hh').textContent = String(h).padStart(2,'0');
+        document.getElementById('mm').textContent = String(m).padStart(2,'0');
+        document.getElementById('ss').textContent = String(s).padStart(2,'0');
+        if (t === 0) clearInterval(timer);
+      }
+      tick();
+      const timer = setInterval(tick, 1000);
+    }
+    document.addEventListener('DOMContentLoaded', startCountdown);
+
+    // Accordion
+    document.querySelectorAll('#committee .accordion-item > button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const open = item.classList.contains('active');
+        document.querySelectorAll('#committee .accordion-item').forEach(i => {
+          i.classList.remove('active');
+          i.querySelector('button').setAttribute('aria-expanded', 'false');
+          i.querySelector('svg').style.transform = 'rotate(0deg)';
+        });
+        if (!open) {
+          item.classList.add('active');
+          btn.setAttribute('aria-expanded', 'true');
+          item.querySelector('svg').style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
